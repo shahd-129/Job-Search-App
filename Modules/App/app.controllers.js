@@ -12,7 +12,7 @@ export const uploadeFile = catchAysncErrorr(async (req, res) => {
 
   const application = new App({
     jobId,
-    userId: req.user._id,
+    userId: req.user.userId,
     userTechSkills,
     userSoftSkills,
     userResume: req.file.path,
